@@ -1,0 +1,9 @@
+.custom-bg{
+    background-color: #d1feff;
+}
+
+.nav-hover:hover{
+    background-color: #b4d3d4;
+    border-radius: 10px;
+}
+

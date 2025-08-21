@@ -5,6 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 import TipoServicio from "./TipoServicio";
 
 const Servicio = () => {
+const [showPrimary, setShowPrimary] = useState(false);
 const [showSecond, setShowSecond] = useState(false);
 
 return (
@@ -17,6 +18,7 @@ return (
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
+                            onAnimationComplete={() => setShowPrimary(true)}
                         >
                             <Typewriter
                                 words={["Servicios"]}
